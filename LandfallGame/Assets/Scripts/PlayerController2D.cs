@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class PlayerController2D : MonoBehaviour
 {
-    //editable vars
+    //editable fields
     [SerializeField]
-    private float
+    float
         _playerWalkSpeed = 5.5f;
 
-    //private vars
-    private Vector2 _playerMoveDir;
-    private Rigidbody2D _rb;
+    //private fields
+    Vector2 _playerMoveDir;
+    Rigidbody2D _rb;
 
     private void Awake()
     {
-        //assigning RB to var
+        //assigning RB to field 
         _rb = GetComponent<Rigidbody2D>();
     }
 
