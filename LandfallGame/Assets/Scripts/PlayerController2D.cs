@@ -13,13 +13,13 @@ public class PlayerController2D : MonoBehaviour
     Vector2 _playerMoveDir;
     Rigidbody2D _rb;
 
-    private void Awake()
+    void Awake()
     {
         //assigning RB to field 
         _rb = GetComponent<Rigidbody2D>();
     }
 
-    private void Update()
+    void Update()
     {
         //player movement variables
         float _moveX = 0f;
@@ -47,7 +47,7 @@ public class PlayerController2D : MonoBehaviour
         _playerMoveDir = new Vector2(_moveX, _moveY).normalized;
     }
 
-    private void FixedUpdate()
+    void FixedUpdate()
     {      
         //move player object
         _rb.velocity = _playerMoveDir * _playerWalkSpeed;    
