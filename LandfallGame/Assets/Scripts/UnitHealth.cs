@@ -51,7 +51,7 @@ public class UnitHealth
     {
         if (_currentHealth < _currentMaxHealth)
         {
-            _currentHealth -= healAmount;
+            _currentHealth += healAmount;
         }
         if (_currentHealth > _currentMaxHealth)
         {
