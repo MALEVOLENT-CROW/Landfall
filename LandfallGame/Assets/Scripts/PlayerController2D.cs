@@ -21,6 +21,8 @@ public class PlayerController2D : MonoBehaviour
 
     private void Update()
     {
+        _playerMoveDir = new Vector2(Input.GetAxisRaw("Horizontal") * _playerWalkSpeed, Input.GetAxisRaw("Vertical") * _playerWalkSpeed);
+        /*
         //player movement variables
         float _moveX = 0f;
         float _moveY = 0f;
@@ -45,11 +47,15 @@ public class PlayerController2D : MonoBehaviour
 
         //assign move direction to new vector
         _playerMoveDir = new Vector2(_moveX, _moveY).normalized;
+        */
     }
 
     private void FixedUpdate()
     {
+        _rb.AddForce(_playerMoveDir);
+        /*
         //move player object
         _rb.velocity = _playerMoveDir * _playerWalkSpeed;
+        */
     }
 }
