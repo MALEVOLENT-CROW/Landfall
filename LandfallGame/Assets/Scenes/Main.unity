@@ -279,6 +279,10 @@ PrefabInstance:
       propertyPath: m_CollisionDetection
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6297587333919261538, guid: a9ae91c0f69da824fb689b07356bb1f4, type: 3}
+      propertyPath: _playerWalkSpeed
+      value: 5.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
