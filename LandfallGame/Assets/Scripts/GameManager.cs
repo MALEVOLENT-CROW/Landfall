@@ -7,6 +7,7 @@ public class GameManager:MonoBehaviour {
     public static GameManager gameManager { get; private set; }
 
     public UnitHealth _playerHealth = new UnitHealth(100,100);
+    public UnitArmour _playerArmour = new UnitArmour(10,10);
 
     void Awake() {
         if(gameManager != null && gameManager != this) {
